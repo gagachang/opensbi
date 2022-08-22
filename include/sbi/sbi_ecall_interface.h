@@ -12,6 +12,12 @@
 
 /* clang-format off */
 
+/* Structure of SBI return values */
+struct sbiret {
+	long error;
+	long value;
+};
+
 /* SBI Extension IDs */
 #define SBI_EXT_0_1_SET_TIMER			0x0
 #define SBI_EXT_0_1_CONSOLE_PUTCHAR		0x1
