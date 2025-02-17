@@ -16,6 +16,7 @@
 #include <sbi/sbi_hartmask.h>
 #include <sbi/sbi_domain_context.h>
 #include <sbi/sbi_domain_data.h>
+#include <sbi/sbi_domain_mpxy_state.h>
 
 struct sbi_scratch;
 
