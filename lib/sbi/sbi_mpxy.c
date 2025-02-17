@@ -74,21 +74,6 @@ static SBI_LIST_HEAD(mpxy_channel_list);
 #error "Undefined XLEN"
 #endif
 
-/** Per hart shared memory */
-struct mpxy_shmem {
-	unsigned long shmem_addr_lo;
-	unsigned long shmem_addr_hi;
-};
-
-struct mpxy_state {
-	/* MSI support in MPXY */
-	bool msi_avail;
-	/* SSE support in MPXY */
-	bool sse_avail;
-	/* MPXY Shared memory details */
-	struct mpxy_shmem shmem;
-};
-
 /** Disable hart shared memory */
 static inline void sbi_mpxy_shmem_disable(struct mpxy_state *ms)
 {
